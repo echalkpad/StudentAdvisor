@@ -1,0 +1,142 @@
+<!doctype html>
+<html>
+
+	<head>
+		
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, target-densitydpi=device-dpi, user-scalable=0">
+	
+		<!-- NO CACHING!! ============================================================ -->
+
+		<meta http-equiv='cache-control' content='no-cache'>
+		<meta http-equiv='expires' content='0'>
+		<meta http-equiv='pragma' content='no-cache'>
+		
+		<!-- NO CACHING!! ============================================================ -->
+
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+		<link rel="stylesheet" type="text/css" href="css/animate-custom.css" />
+		<link rel="stylesheet" type="text/css" href="css/app.css" />
+
+		<title>Student Advisor</title>
+
+	</head>
+
+	<body>
+	
+		<div class="stNavBar">
+			<ul class="stNav">
+				<li id="nav_study" class="active"><a href="#">study</a></li>
+				<li id="nav_feedback"><a href="#">track</a></li>
+				<li id="nav_achievements"><a href="#">goals</a></li>
+			</ul>
+		</div>
+
+		<div id="sectionContent">
+			
+			<div id="study" class="page hidden animated">
+
+				<div id="start" class="animated">
+					<div class="jumbotron">
+						<h1 class="center">Start or resume studying activity</h1>
+						<p class="lead center">Hit the button below if you are ready to start studying and keeping track of distractions, or if you took a break and wish to continue.</p>
+						<p class="center"><a id="startStudyingButton" disabled="disabled" class="btn btn-lg btn-success" href="#">logging into common sense...</a></p>
+					</div>
+				</div>
+
+				<div id="running" class="hidden animated">
+					<div class="jumbotron">
+						<h1 class="center">You should be studying</h1>
+						<p class="lead center">study study study study study study study study study study study study
+						</p>
+						<p class="center">
+							<a id="breakStudyingButton" class="btn btn-lg btn-danger" href="#">take a break!</a>
+						</p>
+					</div>
+				</div>
+
+			</div>		
+
+			<div id="feedback" class="page hidden animated">
+				
+				<div id="" class="">
+					<div class="jumbotron">
+						<h1 class="center">Track the realtime sensor and model values</h1>
+						<p class="lead">in the table below the graph you can see what each line represents.</p>
+					</div>
+				</div>
+	
+				<div id="chartInfoDiv"></div>
+
+			</div>
+
+			<div id="achievements" class="page hidden animated">
+					
+				<div id="a" class="a">
+					<div class="jumbotron">
+						<h1 class="center">achievements</h1>
+						<p class="lead">achievements are not yet live, we are working on them!</p>
+					</div>
+				</div>
+
+			</div>
+			
+		</div>
+
+		<div id="modal" class="suggestBreak hidden">
+			<div id="modalContent">
+				<div id="header">
+					<h1>Take a break!</h1>
+				</div>
+				<div id="content">
+					<img src="img/Egg_Timer.png">
+					<p class="explanation">
+						Study advisor thinks that taking a break now will benefit your study efficiency.
+					</p>
+					<p class="breakbuttons">
+						<a id="disagreeButton" class="btn btn-lg btn-danger btn-block" href="#">Keep studying</a>
+						<a id="agreeButton" class="btn btn-lg btn-success btn-block" href="#">Take a break</a>
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<div id="modal" class="suggestLaterBreak hidden">
+			<div id="modalContent">
+				<div id="header">
+					<h1>Take a LATER break!</h1>
+				</div>
+				<div id="content">
+					<img src="img/Egg_Timer_NOT.png">
+					<p class="explanation">
+						Study advisor thinks that taking a break LATER will increase your attentional control.
+					</p>
+					<p class="breakbuttons">
+						<a id="disagreeButton2" class="btn btn-lg btn-danger btn-block" href="#">Take break anyway</a>
+						<a id="agreeButton2" class="btn btn-lg btn-success btn-block" href="#">Keep studying</a>
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<script type="text/javascript" src="js/vendor/zepto.min.js"></script>
+		<script type="text/javascript" src="js/vendor/zepto.touch.js"></script>
+		<script type="text/javascript" src="js/vendor/signals.min.js"></script>
+        <script type="text/javascript" src="js/vendor/Chart.min.js"></script>
+        <script type="text/javascript" src="js/vendor/canvasjs.min.js"></script>
+        <script type="text/javascript" src="js/phonegap.js"></script>
+
+        <script type="text/javascript" src="js/app/app.js"></script>
+        <script type="text/javascript" src="accountInfo.js"></script>
+        <script type="text/javascript" src="js/app/model.js"></script>
+        <script type="text/javascript" src="js/app/timeKeeper.js"></script>
+        <script type="text/javascript" src="js/app/commonSense.js"></script>
+        <script type="text/javascript" src="js/app/personalProperties.js"></script>
+
+        <script type="text/javascript">
+        	app.initialize();
+        </script>
+
+	</body>
+
+</html>
